@@ -12,7 +12,7 @@
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
+              <div>
                 <img class="mx-auto" width="300" :src="quatrelLogo" alt="logo du 4L trophy">
                 <h1 class="text-white font-semibold text-5xl">
                   Projet 4L trophy 2025
