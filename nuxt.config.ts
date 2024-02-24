@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxtjs/axios',
     ['nuxt-mail', {
       message: {
         to: 'samuelpeybernes33@gmail.com',
