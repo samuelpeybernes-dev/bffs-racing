@@ -210,16 +210,13 @@
           </div>
         </div>
       </section>
-
       <section class="pt-20 pb-48">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold">Here are our heroes</h2>
+              <h2 class="text-4xl font-semibold">Ils nous soutiennent deja </h2>
               <p class="text-lg leading-relaxed m-4 text-blueGray-500">
-                According to the National Oceanic and Atmospheric
-                Administration, Ted, Scambos, NSIDClead scentist, puts the
-                potentially record maximum.
+                Un grand merci à ces entreprises qui nous soutiennent déjà dans notre projet.
               </p>
             </div>
           </div>
@@ -228,24 +225,25 @@
               <div class="px-6">
                 <img alt="..." :src="team1" class="shadow-lg rounded-full mx-auto max-w-120-px" />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Ryan Tompson</h5>
+                  <h5 class="text-xl font-bold">Entreprise</h5>
                   <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    Web Developer
+                    Entreprise
                   </p>
                   <div class="mt-6">
                     <button
                       class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button">
-                      <i class="fab fa-twitter"></i>
+                      <font-awesome-icon icon="fab fa-chrome" />
+
                     </button>
                     <button
                       class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button">
-                      <i class="fab fa-facebook-f"></i>
+                      <font-awesome-icon icon="fab fa-facebook" />
                     </button>
-                    <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    <button class="bg-blue-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button">
-                      <i class="fab fa-dribbble"></i>
+                      <font-awesome-icon icon="fab fa-linkedin" />
                     </button>
                   </div>
                 </div>
@@ -255,19 +253,25 @@
               <div class="px-6">
                 <img alt="..." :src="team2" class="shadow-lg rounded-full mx-auto max-w-120-px" />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Romina Hadid</h5>
+                  <h5 class="text-xl font-bold">Entreprise</h5>
                   <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    Marketing Specialist
+                    Entreprise
                   </p>
                   <div class="mt-6">
-                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    <button
+                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button">
-                      <i class="fab fa-google"></i>
+                      <font-awesome-icon icon="fab fa-chrome" />
+
                     </button>
                     <button
                       class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button">
-                      <i class="fab fa-facebook-f"></i>
+                      <font-awesome-icon icon="fab fa-facebook" />
+                    </button>
+                    <button class="bg-blue-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button">
+                      <font-awesome-icon icon="fab fa-linkedin" />
                     </button>
                   </div>
                 </div>
@@ -277,24 +281,25 @@
               <div class="px-6">
                 <img alt="..." :src="team3" class="shadow-lg rounded-full mx-auto max-w-120-px" />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Alexa Smith</h5>
+                  <h5 class="text-xl font-bold">Entreprise</h5>
                   <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    UI/UX Designer
+                    Entreprise
                   </p>
                   <div class="mt-6">
-                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button">
-                      <i class="fab fa-google"></i>
-                    </button>
                     <button
                       class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button">
-                      <i class="fab fa-twitter"></i>
+                      <font-awesome-icon icon="fab fa-chrome" />
+
                     </button>
                     <button
-                      class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button">
-                      <i class="fab fa-instagram"></i>
+                      <font-awesome-icon icon="fab fa-facebook" />
+                    </button>
+                    <button class="bg-blue-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button">
+                      <font-awesome-icon icon="fab fa-linkedin" />
                     </button>
                   </div>
                 </div>
@@ -304,28 +309,25 @@
               <div class="px-6">
                 <img alt="..." :src="team4" class="shadow-lg rounded-full mx-auto max-w-120-px" />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Jenna Kardi</h5>
+                  <h5 class="text-xl font-bold">Entreprise</h5>
                   <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    Founder and CEO
+                    Entreprise
                   </p>
                   <div class="mt-6">
-                    <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button">
-                      <i class="fab fa-dribbble"></i>
-                    </button>
-                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button">
-                      <i class="fab fa-google"></i>
-                    </button>
                     <button
                       class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button">
-                      <i class="fab fa-twitter"></i>
+                      <font-awesome-icon icon="fab fa-chrome" />
+
                     </button>
                     <button
-                      class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button">
-                      <i class="fab fa-instagram"></i>
+                      <font-awesome-icon icon="fab fa-facebook" />
+                    </button>
+                    <button class="bg-blue-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button">
+                      <font-awesome-icon icon="fab fa-linkedin" />
                     </button>
                   </div>
                 </div>
