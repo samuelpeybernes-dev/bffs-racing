@@ -21,9 +21,10 @@ export default defineNuxtConfig({
       })
     },
     ['nuxt-mail', {
-      message: {
-        to: 'samuelpeybernes33@gmail.com',
-      },
+      message: [
+        { name: 'samuel', to: 'samuelpeybernes33@gmail.com' },
+        { name: 'lucas', to: 'lucas.therasse@gmail.com' },
+      ],
       smtp: {
         host: "smtp.gmail.com",
         port: 465,
