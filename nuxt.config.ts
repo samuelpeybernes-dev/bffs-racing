@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/styles/index.css', '@fortawesome/fontawesome-svg-core/styles.css'],
@@ -8,7 +10,16 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  build: {
+    transpile: ['@fortawesome/vue-fontawesome', 'vuetify']
+  },
   modules: [
+    (_options, nuxt) => {
+      nuxt.hooks.hook('vite:extendConfig', (config) => {
+        // @ts-expect-error
+        config.plugins.push(vuetify({ autoImport: true }))
+      })
+    },
     ['nuxt-mail', {
       message: {
         to: 'samuelpeybernes33@gmail.com',
@@ -22,5 +33,12 @@ export default defineNuxtConfig({
         },
       },
     }]
-  ]
+  ],
+  vite: {
+    vue: {
+      template: {
+        transformAssetUrls,
+      },
+    },
+  },
 })

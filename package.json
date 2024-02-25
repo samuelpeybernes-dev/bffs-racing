@@ -14,7 +14,10 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@mdi/font": "^7.4.47",
     "@nuxtjs/axios": "^5.13.6",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "nodemailer": "^6.9.10",
     "nuxt": "^3.10.3",
     "nuxt-mail": "^4.0.3",
@@ -23,7 +26,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
+    "nuxt-icon": "^0.6.8",
     "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "vite-plugin-vuetify": "^2.0.1",
+    "vuetify": "^3.5.6"
   }
 }

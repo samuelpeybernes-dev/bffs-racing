@@ -335,7 +335,7 @@
         </div>
       </section>
 
-      <section class="pb-20 relative block bg-blueGray-800">
+      <section class="lg:pb-16 pb-32 relative block bg-blueGray-800">
         <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
           style="transform: translateZ(0);">
           <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
@@ -394,7 +394,7 @@
           <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
             <div class="w-full lg:w-6/12 px-4">
               <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">
-                <div class="flex-auto p-5 lg:p-10">
+                <form ref="form" @submit.prevent="submitForm" class="flex-auto p-5 lg:p-10">
                   <h4 class="text-2xl font-semibold">
                     Vous souhaitez soutenir notre projet ?
                   </h4>
@@ -405,38 +405,49 @@
                     <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="full-name">
                       Prénom et Nom
                     </label>
-                    <input v-model="formData.name" type="text"
+                    <input @change="v$.name.$touch" v-model="formData.name" type="text"
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Prénom et Nom" />
+                    <span class="text-xs text-red-500" v-if="v$.name.$error">{{
+                      v$.name.$errors[0].$message
+                    }}</span>
                   </div>
 
                   <div class="relative w-full mb-3">
                     <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="email">
                       Email
                     </label>
-                    <input v-model="formData.email" type="email"
+                    <input @change="v$.email.$touch" v-model="formData.email" type="text"
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Email" />
+                    <span class="text-xs text-red-500" v-if="v$.email.$error">{{
+                      v$.email.$errors[0].$message
+                    }}</span>
                   </div>
 
                   <div class="relative w-full mb-3">
                     <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="message">
                       Message
                     </label>
-                    <textarea v-model="formData.message" rows="4" cols="80"
+                    <textarea @change="v$.message.$touch" v-model="formData.message" rows="4" cols="80"
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                       placeholder="Ecrivez votre message..." />
+                    <span class="text-xs text-red-500" v-if="v$.message.$error">{{
+                      v$.message.$errors[0].$message
+                    }}</span>
 
                   </div>
                   <div class="text-center mt-6">
-                    <button @click="submitForm"
-                      class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                      type="button">
+                    <button type="submit"
+                      class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
                       Envoyer ➡️
                     </button>
+
+
                   </div>
-                </div>
+                </form>
               </div>
+              <v-alert v-show="isSent" type="success" title="Message envoyé"></v-alert>
             </div>
           </div>
         </div>
@@ -445,7 +456,7 @@
     <footer-component />
   </div>
 </template>
-<script>
+<script >
 import Navbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/FooterSmall.vue";
 import team1 from "@/assets/img/team-1-800x800.jpg";
@@ -454,14 +465,35 @@ import team3 from "@/assets/img/team-3-800x800.jpg";
 import team4 from "@/assets/img/team-4-470x470.png";
 import backgroundHeader from "@/assets/img/4LTrophy928.jpg";
 import quatrelLogo from "@/assets/img/4L-trophy-logo.png";
+import { required, email, helpers } from '@vuelidate/validators';
+import { useVuelidate } from '@vuelidate/core';
+
+const formData = reactive({
+  name: '',
+  email: '',
+  message: '',
+});
+
+const rules = computed(() => {
+  return {
+    email: {
+      required: helpers.withMessage("L'email est requis", required),
+      email: helpers.withMessage('Le format de mail est incorrect', email),
+    },
+    name: {
+      required: helpers.withMessage('Le nom et prénom est requis', required),
+    },
+    message: {
+      required: helpers.withMessage('Un message est requis', required),
+    },
+  };
+});
+
+const v$ = useVuelidate(rules, formData);
 
 export default {
   data() {
-    const formData = {
-      name: '',
-      email: '',
-      message: '',
-    }
+
     return {
       team1,
       team2,
@@ -469,7 +501,9 @@ export default {
       team4,
       backgroundHeader,
       quatrelLogo,
-      formData
+      formData,
+      v$,
+      isSent: false,
     };
   },
   components: {
@@ -478,12 +512,26 @@ export default {
   },
   methods: {
     async submitForm() {
-      this.$mail.send({
-        from: this.formData.name,
-        subject: 'Demande de contact 4L trophy',
-        text: this.formData.name + this.formData.email + this.formData.message,
-      })
+      v$.value.$validate();
+      if (!v$.value.$error) {
+        this.$mail.send({
+          from: this.formData.name,
+          subject: 'Demande de contact 4L trophy',
+          html: "Prénom et Nom : " + this.formData.name + "<br>" +
+            "Email :" + this.formData.email + "<br>" +
+            "Message :" + this.formData.message,
+        })
+        this.isSent = true;
+        this.resetForm();
+      }
+    },
+    resetForm() {
+      v$.value.$reset()
+      this.formData.name = '';
+      this.formData.email = '';
+      this.formData.message = '';
     }
+
   }
 };
 </script>
