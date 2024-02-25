@@ -24,8 +24,8 @@
         </div>
         <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
           style="transform: translateZ(0);">
-          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-            version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <svg class="absolute bottom-[-1px] overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
             <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
           </svg>
         </div>
@@ -338,13 +338,13 @@
       <section class="lg:pb-16 pb-32 relative block bg-blueGray-800">
         <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
           style="transform: translateZ(0);">
-          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-            version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <svg class="absolute bottom-[-1px] overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
             <polygon class="text-blueGray-800 fill-current" points="2560 0 2560 100 0 100"></polygon>
           </svg>
         </div>
 
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <div class="container mx-auto pt-16 px-4 lg:pt-24 lg:pb-64">
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl font-semibold text-white">
