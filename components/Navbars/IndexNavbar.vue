@@ -20,8 +20,7 @@
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li class="flex items-center">
             <a class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-notus%2F%23%2F"
-              target="_blank">
+              href="https://www.facebook.com/" target="_blank">
               <font-awesome-icon icon="fab fa-facebook" class="text-blueGray-400  text-lg leading-lg" />
               <span class="lg:hidden inline-block ml-2">Partage</span>
             </a>
@@ -29,7 +28,7 @@
 
           <li class="flex items-center">
             <a class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://github.com/creativetimofficial/vue-notus?ref=vn-index-navbar" target="_blank">
+              href="https://www.instagram.com/" target="_blank">
               <font-awesome-icon icon="fab fa-instagram " class="text-blueGray-400 text-lg leading-lg" />
               <span class="lg:hidden inline-block ml-2">Suis nous</span>
             </a>
