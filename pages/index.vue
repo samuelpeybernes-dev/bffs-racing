@@ -355,36 +355,43 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-wrap mt-12 justify-center">
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                <font-awesome-icon icon="fas fa-phone " class="text-xl" />
-              </div>
-              <h6 class="text-xl mt-5 font-semibold text-white">
-                06 78 49 21 18
-              </h6>
+          <div class="flex flex-wrap mt-12 justify-center gap-5 lg:gap-0">
 
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <a href="tel:0678492118">
+                <div
+                  class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                  <font-awesome-icon icon="fas fa-phone " class="text-xl" />
+                </div>
+                <h6 class="text-xl mt-5 font-semibold text-white">
+                  06 78 49 21 18
+                </h6>
+              </a>
             </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                <font-awesome-icon icon="fab fa-instagram " class="text-xl" />
 
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">
-                Instagram
-              </h5>
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <a href="https://www.instagram.com/">
+                <div
+                  class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                  <font-awesome-icon icon="fab fa-instagram " class="text-xl" />
+
+                </div>
+                <h5 class="text-xl mt-5 font-semibold text-white">
+                  Instagram
+                </h5>
+              </a>
             </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                <font-awesome-icon icon="fab fa-facebook" class="text-xl" />
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">
-                Facebook
-              </h5>
 
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <a href="https://www.facebook.com/">
+                <div
+                  class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                  <font-awesome-icon icon="fab fa-facebook" class="text-xl" />
+                </div>
+                <h5 class="text-xl mt-5 font-semibold text-white">
+                  Facebook
+                </h5>
+              </a>
             </div>
           </div>
         </div>
