@@ -31,11 +31,12 @@
         </Slide>
     </Carousel>
 </template>
-  
+
 <script>
 import { defineComponent } from 'vue'
 import { Carousel, Slide } from 'vue3-carousel'
 import team1 from "@/assets/img/team-1-800x800.jpg";
+import garageLucas from "@/assets/img/garage-lucas.jpg";
 import 'vue3-carousel/dist/carousel.css'
 export default defineComponent({
     name: 'Autoplay',
@@ -53,11 +54,11 @@ export default defineComponent({
         },
         companys: [
             {
-                name: 'Entreprise',
-                logo: team1,
+                name: 'Garage Therasse et fils',
+                logo: garageLucas,
                 activity: 'Garage',
                 website: 'https://www.google.com',
-                facebook: 'https://www.facebook.com',
+                facebook: 'https://www.facebook.com/GarageTherasseetfils/',
                 linkedin: 'https://www.linkedin.com',
             },
             {
@@ -118,4 +119,3 @@ export default defineComponent({
     },
 })
 </script>
-  

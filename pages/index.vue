@@ -30,34 +30,30 @@
           </svg>
         </div>
       </div>
-      <section class="pb-20 bg-blueGray-200 -mt-24">
+      <section class="pb-20 bg-blueGray-200 -mt-32">
         <div class="container mx-auto px-4">
           <Stepper />
-
-
 
           <div class="flex flex-wrap items-center mt-32">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
               <div
                 class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                <i class="fas fa-user-friends text-xl"></i>
+                <font-awesome-icon icon="fas fa-user-friends" class="text-xl" />
               </div>
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Working with us is a pleasure
+                Deux meilleurs amis
               </h3>
               <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                Nous sommes deux meilleurs amis, Lucas et Samuel, et nous avons décidé de nous lancer dans cette
+                aventure !
               </p>
               <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600">
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                Le 4L Trophy est un rallye humanitaire étudiant qui se déroule
+                au Maroc. Il est organisé par Désertours et se déroule chaque
+                année en février. Le 4L Trophy est le plus grand rallye
+                étudiant d'Europe.
               </p>
-              <router-link to="/" class="font-bold text-blueGray-700 mt-8">
-                Check Vue Notus!
-              </router-link>
+
             </div>
 
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
@@ -71,13 +67,11 @@
                     class="absolute left-0 w-full block h-95-px -top-94-px">
                     <polygon points="-30,95 583,95 583,65" class="text-emerald-500 fill-current"></polygon>
                   </svg>
-                  <h4 class="text-xl font-bold text-white">
-                    Top Notch Services
+                  <h4 class="text-xl font-bold ">
+                    blabla
                   </h4>
-                  <p class="text-md font-light mt-2 text-white">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                  <p class="text-md font-light mt-2">
+                    blablablablablablablablablablablablablablablablablablablablablabla
                   </p>
                 </blockquote>
               </div>
@@ -86,7 +80,10 @@
         </div>
       </section>
 
-      <section class="relative py-20">
+
+
+
+      <section class="relative py-20 pb-32">
         <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
           style="transform: translateZ(0);">
           <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
@@ -94,78 +91,13 @@
             <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
           </svg>
         </div>
-
-        <div class="container mx-auto px-4">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-              <img alt="..." class="max-w-full rounded-lg shadow-lg"
-                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" />
-            </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-              <div class="md:pr-12">
-                <div
-                  class="text-emerald-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-emerald-300">
-                  <i class="fas fa-rocket text-xl"></i>
-                </div>
-                <h3 class="text-3xl font-semibold">A growing company</h3>
-                <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-                  The extension comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go.
-                </p>
-                <ul class="list-none mt-6">
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3">
-                          <i class="fas fa-fingerprint"></i>
-                        </span>
-                      </div>
-                      <div>
-                        <h4 class="text-blueGray-500">
-                          Carefully crafted components
-                        </h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3">
-                          <i class="fab fa-html5"></i>
-                        </span>
-                      </div>
-                      <div>
-                        <h4 class="text-blueGray-500">
-                          Amazing page examples
-                        </h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3">
-                          <i class="far fa-paper-plane"></i>
-                        </span>
-                      </div>
-                      <div>
-                        <h4 class="text-blueGray-500">Dynamic components</h4>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+          style="transform: translateZ(0);">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
         </div>
-      </section>
-
-
-      <section class="pt-20 pb-48">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
@@ -260,8 +192,8 @@
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Prénom et Nom" />
                     <span class="text-xs text-red-500" v-if="v$.name.$error">{{
-                      v$.name.$errors[0].$message
-                    }}</span>
+          v$.name.$errors[0].$message
+        }}</span>
                   </div>
 
                   <div class="relative w-full mb-3">
@@ -272,8 +204,8 @@
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Email" />
                     <span class="text-xs text-red-500" v-if="v$.email.$error">{{
-                      v$.email.$errors[0].$message
-                    }}</span>
+          v$.email.$errors[0].$message
+        }}</span>
                   </div>
 
                   <div class="relative w-full mb-3">
@@ -284,8 +216,8 @@
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                       placeholder="Ecrivez votre message..." />
                     <span class="text-xs text-red-500" v-if="v$.message.$error">{{
-                      v$.message.$errors[0].$message
-                    }}</span>
+          v$.message.$errors[0].$message
+                      }}</span>
 
                   </div>
                   <div class="text-center mt-6">
@@ -307,15 +239,11 @@
     <footer-component />
   </div>
 </template>
-<script >
+<script>
 import Navbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/FooterSmall.vue";
 import Stepper from "@/components/Stepper.vue";
 import Sponsors from "@/components/Sponsors.vue";
-import team1 from "@/assets/img/team-1-800x800.jpg";
-import team2 from "@/assets/img/team-2-800x800.jpg";
-import team3 from "@/assets/img/team-3-800x800.jpg";
-import team4 from "@/assets/img/team-4-470x470.png";
 import backgroundHeader from "@/assets/img/4LTrophy928.jpg";
 import quatrelLogo from "@/assets/img/4L-trophy-logo.png";
 import { required, email, helpers } from '@vuelidate/validators';
@@ -348,10 +276,6 @@ export default {
   data() {
 
     return {
-      team1,
-      team2,
-      team3,
-      team4,
       backgroundHeader,
       quatrelLogo,
       formData,
